@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #666;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilos para diseño responsivo */
+        @media only screen and (max-width: 600px) {
+            nav a {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Esto es un simulacro (espero), si recibis un correo en las 48hs es porque probablemente este muerto. web</h1>
+    </header>
+    <nav>
+        <a href="#" id="inicio">Inicio</a>
+        <a href="#" id="acerca">Acerca de</a>
+        <a href="#" id="contacto">Contacto</a>
+    </nav>
+    <section>
+        <h2>Comunicado.</h2>
+        <p>Solo queria decir que me esta yendo muy bien. Pero hoy, puede ser el ultimo dia de mi vida.</p>
+    </section>
+    <footer>
+        <p>26/10/02 - ?/?/?</p>
+    </footer>
+
+    <script>
+        document.getElementById("inicio").addEventListener("click", function(event) {
+            event.preventDefault(); // Evita que el enlace redirija a otra página
+            alert("Gracias por formar parte");
+        });
+
+        document.getElementById("acerca").addEventListener("click", function(event) {
+            event.preventDefault(); // Evita que el enlace redirija a otra página
+            alert("Mezcla del mounstro de Hugo y de Narciso");
+        });
+
+        document.getElementById("contacto").addEventListener("click", function(event) {
+            event.preventDefault(); // Evita que el enlace redirija a otra página
+            alert("No existe información del usuario, vuelva a intentarlo cuando exista");
+        });
+    </script>
+</body>
+</html>
